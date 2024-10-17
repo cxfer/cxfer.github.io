@@ -1,5 +1,4 @@
-//ClientID=864836426285-eov1sk011is4pqcs8em1d106qo9mf95m.apps.googleusercontent.com
-//Client secret = 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
+
 function setCookie(name, value, days) {
     var expires = "";
     if (days) {
