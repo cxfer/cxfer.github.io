@@ -1,0 +1,420 @@
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh; /* Allow body to grow beyond the viewport height */
+        flex-direction: column;
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+        margin: 0; /* Remove default margin */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            /*padding: 10px 20px;*/
+            margin-top:0;
+        }
+
+        /* Logo styling */
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            width : 100%;
+        }
+
+        .banner {
+            width: 100%;
+            height: 60px;
+            background-color: orange;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Align items vertically */
+        }
+        .banner p, .banner div {
+            margin: 0; /* Remove default margins */
+            padding: 0; /* Remove default padding */
+        }
+
+        .banner1 {
+            width: 100%;
+            height: 300px;
+            background-image: url('sav.jpg'); /* Placeholder banner image */
+            background-size: cover;
+            background-position: center;
+        }
+        #loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute; /* Fix to the center of the viewport */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        .gothatena.img {
+            width: 70px; /* Adjust logo size */
+            height: auto;
+            /*animation: rotate 2s linear infinite;  Rotate animation */
+        }
+        img {
+            width: 70px; /* Adjust logo size */
+            height: auto;
+            /* animation: rotate 2s linear infinite; Rotate animation */
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotating-logo {
+            width: 70px; /* Adjust logo size */
+            height: auto;
+            animation: rotate 2s linear infinite; /* Rotate animation */
+        }
+
+        .welcome-text {
+            margin-top: 20px;
+            font-size: 15px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.5s; /* Smooth transition */
+            font-family: 'Poppins', sans-serif; /* A modern and clean font */
+            font-size: 28px; /* Large, noticeable font size */
+            font-weight: 700; /* Bold to stand out */
+            color: #ff4500; /* Vibrant color (orange-red) */
+            text-align: center; /* Center the text */
+            text-transform: uppercase; /* All caps for emphasis */
+            letter-spacing: 2px; /* Adds spacing between letters */
+            background: linear-gradient(45deg, #ff6b6b, #ffd700); /* Gradient background */
+            -webkit-background-clip: text; /* Clips the gradient to text */
+            -webkit-text-fill-color: transparent; /* Makes the text gradient */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow */
+            margin: 20px 0; /* Adds space around the text */
+
+        }
+        .main-content {
+            display: none; /* Hidden until loader finishes */
+        }
+        #quiz-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+        }
+        .question {
+            display: none; /* Initially hidden */
+        }
+        .question.active {
+            display: block; /* Show only active question */
+        }
+        button {
+        background-color: orange;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+        width: 100%;
+        font-size: 16px;
+        }
+
+        button:focus {
+        outline: none; /* Removes the default focus outline */
+        }
+
+        button:hover {
+        background-color: #0056b3;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .gifts {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .gift {
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+
+        .process-item {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            color: red;
+            font-weight: bold;
+        }
+
+        .status.tick {
+            color: green;
+        }
+        .gothogo{
+            font-family: 'Poppins', sans-serif; /* A modern and clean font */
+            font-size: 28px; /* Large, noticeable font size */
+            font-weight: 700; /* Bold to stand out */
+            color: #ff4500; /* Vibrant color (orange-red) */
+            text-align: center; /* Center the text */
+            text-transform: uppercase; /* All caps for emphasis */
+            letter-spacing: 2px; /* Adds spacing between letters */
+            background: linear-gradient(45deg, #ff6b6b, #ffd700); /* Gradient background */
+            -webkit-background-clip: text; /* Clips the gradient to text */
+            -webkit-text-fill-color: transparent; /* Makes the text gradient */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow */
+            margin: 20px 0; /* Adds space around the text */
+        }
+        .congratulations-container {
+        background-color: #f4f4f4; /* White background */
+        /*padding: 15px;  Padding for space around text */
+        /*border: 1px solid #ccc;  Light border for subtle definition */
+        border-radius: 5px; /* Slightly rounded corners */
+        text-align: center; /* Center-align text */
+        max-width: 400px; /* Maximum width for the container */
+        margin: 20px auto; /* Center the container horizontally with margin */
+        /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  Subtle shadow for depth */
+        }
+
+        .congratulations-container h4 {
+        font-size: 24px; /* Slightly larger font for the heading */
+        margin-bottom: 10px; /* Space below the heading */
+        }
+
+        .highlight-text {
+        font-weight: bold; /* Bold text for emphasis */
+        color: #333; /* Darker color for better visibility */
+        margin-bottom: 10px; /* Space below the highlighted text */
+        }
+
+        .congratulations-container p {
+        font-size: 16px; /* Normal size for paragraph text */
+        color: #666; /* Subtle gray for paragraph text */
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        .comment {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .comment img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .comment-content {
+            flex-grow: 1;
+        }
+
+        .comment-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show-more {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        #processContainer {
+            display: none; /* Initially hidden */
+        }
+        .tick {
+            color: green; /* Change the color of tick marks */
+        }
+        .notification {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 2px solid #4CAF50; /* Green border */
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure it's on top */
+        }
+
+        .notification p {
+        margin: 0 0 10px;
+        }
+
+        #seeGiftsBtn {
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        #seeGiftsBtn:hover {
+        background-color: #45a049;
+        }
+
+        #continueBtn {
+        padding: 5px 10px;
+        background-color: #008CBA; /* Blue */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        #continueBtn:hover {
+        background-color: #007bb5;
+        }
+        .notification-gif {
+        display: block; /* Ensures the image is on a new line */
+        margin: 10px auto; /* Centers the image and adds margin */
+        width: 50%; /* Adjust width as needed */
+        max-width: 300px; /* Limit the maximum width */
+        }
+
+        .popup, .notification-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+        .popup-message {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+
+        .popup-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup-button:hover {
+            background-color: #0056b3;
+        }
+
+        #processContainer {
+            display: none; /* Initially hidden */
+        }
+
+        #processContainer div {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        /* Dark background overlay when popup is active */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999; /* Ensure it is below the popup but above the rest of the content */
+            display: none; /* Initially hidden */
+        }
+  .gift-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of the boxes */
+    justify-content: center; /* Center the boxes in the container */
+    margin: 20px 0; /* Spacing above and below the gift boxes */
+}
+
+
+
+.gift-box {
+    width: 100px;
+    height: 100px;
+    background-image: url('gift.png'); /* Replace with your image path */
+    background-size: cover;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.gift-box img {
+    width: 50%; /* Make the image fill the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.gift-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .gift-box {
+        flex: 0 0 calc(50% - 20px); /* Two per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gift-box {
+        flex: 0 0 calc(100% - 20px); /* One per row on extra small screens */
+    }
+}
+#progressBarContainer {
+    margin-top: 10px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

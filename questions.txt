@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Section with Gifts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #quiz-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .question {
+            display: none; /* Initially hidden */
+        }
+        .question.active {
+            display: block; /* Show only active question */
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .gifts {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .gift {
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-section">
+        <div class="question active" id="question1">
+            <p>What is the capital of Kenya?</p>
+            <button onclick="selectAnswer('question1', 'question2')">Nairobi</button>
+            <button onclick="selectAnswer('question1', 'question2')">Mombasa</button>
+            <button onclick="selectAnswer('question1', 'question2')">Kisumu</button>
+        </div>
+        <div class="question" id="question2">
+            <p>Which is the largest continent?</p>
+            <button onclick="selectAnswer('question2', 'question3')">Asia</button>
+            <button onclick="selectAnswer('question2', 'question3')">Africa</button>
+            <button onclick="selectAnswer('question2', 'question3')">Europe</button>
+        </div>
+        <div class="question" id="question3">
+            <p>What is the currency of Uganda?</p>
+            <button onclick="selectAnswer('question3', 'end')">UGX</button>
+            <button onclick="selectAnswer('question3', 'end')">KES</button>
+            <button onclick="selectAnswer('question3', 'end')">USD</button>
+        </div>
+        <div class="question" id="end">
+            <p>Thank you for completing the quiz!</p>
+            <button onclick="showGifts()">See Your Gifts</button>
+        </div>
+    </div>
+
+    <div class="gifts" id="gifts">
+        <h3>Your Gifts</h3>
+        <div class="gift">🎁 Gift 1: A 10% discount on your next purchase!</div>
+        <div class="gift">🎁 Gift 2: A free e-book on local history!</div>
+        <div class="gift">🎁 Gift 3: A surprise gift box delivered to your address!</div>
+    </div>
+
+    <script>
+        // Function to handle answer selection
+        function selectAnswer(currentQuestionId, nextQuestionId) {
+            document.getElementById(currentQuestionId).classList.remove('active'); // Hide current question
+            document.getElementById(nextQuestionId).classList.add('active'); // Show next question
+        }
+
+        // Function to show gift boxes after quiz
+        function showGifts() {
+            document.getElementById('gifts').style.display = 'block'; // Show gifts section
+            alert('You have completed the quiz! Now let\'s see your gifts.');
+        }
+    </script>
+</body>
+</html>
