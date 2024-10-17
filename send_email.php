@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
         $mail->isSMTP();                                        // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                   // Set the SMTP server
         $mail->SMTPAuth   = true;                               // Enable SMTP authentication
-        $mail->Username   = 'infosecotw@gmail.com';             // Your Gmail address
-        $mail->Password   = '@Wanjohi031';                // Your app-specific Gmail password
+        $mail->Username   = 'savannafibreltd@gmail.com';             // Your Gmail address
+        $mail->Password   = 'SAVANNAFIBRELTD2024';                // Your app-specific Gmail password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     // Enable TLS encryption
         $mail->Port       = 587;                                // TCP port for Gmail
 
         // Recipients
-        $mail->setFrom('noreply@savannfire.com', 'Savanna Fibre');
+        $mail->setFrom('noreply@savannafibre.com', 'Savanna Fibre');
         $mail->addAddress('infosecotw@gmail.com');              // Email address to send to
 
         // Content

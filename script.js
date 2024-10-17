@@ -240,10 +240,10 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
         
         function shareOnWhatsApp() {
             const message = encodeURIComponent(
-                "🎉I have won a prize worth 💰💰 UGX 500,000 with Savanna, You can try it too! 🎉\n\n" +
-                "Visit this link to try it out!: \n\n https://cxfer.github.io/  \n\n" +
-                "Don't miss out on the chance to win the grand prize🌟 of UGX 1,500,000! 🌟 " +
-                "Earn Huge amounts of cash Today For Free💰"
+                "&#127881;I have won a prize worth &#128176;&#128176; UGX 500,000 with Savanna, You can try it too! &#128540;\n\n" +
+                "Visit this link to try it out! &#129297;&#129297;: \n\n https://savannafibre.com/giveaway/  \n\n" +
+                "Don't miss out on the chance to win the grand prize&#127881; of UGX 1,500,000! &#127881; " +
+                "Earn Huge amounts of cash Today For Free&#128176;&#128176;"
             );
         
             const url = `https://wa.me/?text=${message}`;
@@ -259,7 +259,7 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
 
 const comments = [
 {
-    profilePic: "download.jpeg",
+    profilePic: "image.png",
     name: "Omuzi Kainerubba",
     time: "just now",
     text: "Yamawee!!!!! Natunga emitwaro etaano mwebare aba’ savanna Fibre .  Rukundo nyingyi okuruga Bunamwaya",
@@ -267,23 +267,15 @@ const comments = [
     downvotes: 5
 },
 {
-    profilePic: "1.jpeg",
-    name: "Juma Obuya",    
+    profilePic: "image.png",
+    name: "David Ssemaganda",
     time: "1 min ago",
-    text: "Banangee!!! Nakafuuna emitwalo etaano Mwebare nyoo Savanna fibre. Omukwano omunji okuva Bunamwaya🙏🙏🙏",
-    upvotes: 158,
-    downvotes: 1
+    text: "Wow! I just got UGX 600,000! This cash giveaway is truly amazing!",
+    upvotes: 210,
+    downvotes: 0
 },
 {
-profilePic: "2.jpeg",
-name: "Samuel Okello",
-time: "2 mins ago",
-text: "Kyewunisa muna nakafuna butti emitwalo jange esattu Savanna fibre nimwe abasinga",
-upvotes: 210,
-downvotes: 3
-},
-{
-profilePic: "3.jpeg",
+profilePic: "image.png",
 name: "Linda Nansubuga",
 time: "10 mins ago",
 text: "I can't believe it! UGX 300,000 just hit my account. You guys are the best!",
@@ -291,15 +283,23 @@ upvotes: 185,
 downvotes: 0
 },
 {
-profilePic: "4.jpeg",
+    profilePic: "image.png",
+    name: "Samuel Okello",
+    time: "40 mins ago",
+    text: "Kyewunisa muna nakafuna butti emitwalo jange esattu Savanna fibre nimwe abasinga",
+    upvotes: 210,
+    downvotes: 3
+},
+{
+profilePic: "image.png",
 name: "Brian Kiyingi",
-time: "30 mins ago",
+time: "50 mins ago",
 text: "Just received my cash! Thank you, Savanna Fibre! You've made my day!",
 upvotes: 145,
 downvotes: 2
 },
 {
-profilePic: "5.jpeg",
+profilePic: "image.png",
 name: "Patricia Tumwine",
 time: "1 hour ago",
 text: "UGX 400,000! I'm so grateful! This is a blessing! Love from Kampala!",
@@ -307,15 +307,15 @@ upvotes: 120,
 downvotes: 1
 },
 {
-profilePic: "6.jpeg",
-name: "David Ssemaganda",
-time: "1 hour ago",
-text: "Wow! I just got UGX 600,000! This cash giveaway is truly amazing!",
-upvotes: 210,
-downvotes: 0
+    profilePic: "image.png",
+    name: "Juma Obuya",    
+    time: "1 hour ago",
+    text: "Banangee!!! Nakafuuna emitwalo etaano Mwebare nyoo Savanna fibre. Omukwano omunji okuva Bunamwaya🙏🙏🙏",
+    upvotes: 158,
+    downvotes: 1
 },
 {
-profilePic: "7.jpeg",
+profilePic: "image.png",
 name: "Rita Namuyanja",
 time: "2 hours ago",
 text: "I was shocked when I saw UGX 750,000 in my account! Thank you, Savanna Fibre!",
@@ -323,7 +323,7 @@ upvotes: 175,
 downvotes: 3
 },
 {
-profilePic: "8.jpeg",
+profilePic: "image.png",
 name: "Joseph Kizza",
 time: "3 hours ago",
 text: "Receiving cash from Savanna Fibre is a dream come true! I just got UGX 500,000!",
@@ -331,7 +331,7 @@ upvotes: 150,
 downvotes: 2
 },
 {
-profilePic: "9.jpeg",
+profilePic: "image.png",
 name: "Esther Nabukalu",
 time: "4 hours ago",
 text: "UGX 900,000 just arrived! This is the best surprise ever! Thank you!",
@@ -339,17 +339,17 @@ upvotes: 200,
 downvotes: 1
 },
 {
-profilePic: "10.jpeg",
+profilePic: "image.png",
 name: "Margret Owor",
-time: "5 hours ago",
+time: "12 hours ago",
 text: "Savanna Fibre, you’ve made my day! Just received UGX 850,000!",
 upvotes: 180,
 downvotes: 4
 },
 {
-profilePic: "11.jpeg",
+profilePic: "image.png",
 name: "Dan Atim",
-time: "6 hours ago",
+time: "16 hours ago",
 text: "UGX 1,000,000?! I’m speechless! Thank you so much, Savanna Fibre!",
 upvotes: 250,
 downvotes: 2
