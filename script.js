@@ -1,3 +1,37 @@
+//ClientID=864836426285-eov1sk011is4pqcs8em1d106qo9mf95m.apps.googleusercontent.com
+//Client secret = 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
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    var email = profile.getEmail();
+
+    // Automatically send the email to the server
+    fetch('send_email.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: email })
+    })
+    .then(response => response.text())
+    .then(data => {
+      alert("Email sent to server: " + email);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  }
+
+
 // Function to simulate loading and then show the main content
 function showMainContent() {
     document.getElementById('loader').style.opacity = '0'; // Fade out loader
