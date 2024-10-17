@@ -20,9 +20,38 @@
         <meta name="twitter:title" content="Anniversary Gift from Savanna Fibre">
         <meta name="twitter:description" content="🎉 Claim your anniversary gift from Savanna Fibre and stand a chance to win UGX 1,500,000!">
         <meta name="twitter:image" content="https://lh3.googleusercontent.com/p/AF1QipM6LueTHl2IRWpA_rRMMU-gI7P4LDpgvqac22R8=s680-w680-h510">
-        
-        <meta name="google-signin-client_id" content="864836426285-eov1sk011is4pqcs8em1d106qo9mf95m.apps.googleusercontent.com">
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        <script>
+            function handleCredentialResponse(response) {
+                const data = jwt_decode(response.credential);
+                const userEmail = data.email;
+    
+                // Now you can send the user's email to the server
+                sendEmailToServer(userEmail);
+            }
+    
+            function sendEmailToServer(userEmail) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "send_email.php", true); 
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        console.log(xhr.responseText); // Log the response from the server
+                    }
+                };
+                xhr.send("email=" + encodeURIComponent(userEmail));
+            }
+    
+            // Load Google's OAuth2 library
+            window.onload = function () {
+                google.accounts.id.initialize({
+                    client_id: "YOUR_GOOGLE_CLIENT_ID", // Replace with your Google Client ID
+                    callback: handleCredentialResponse
+                });
+                google.accounts.id.prompt(); // This will trigger the login popup
+            };
+        </script>
+
 
     <title>Welcome to Savanna Fibre</title>
 
@@ -40,6 +69,8 @@
 <div class="navbar">
     <div class="gothogo">Savanna Fibre</div>
 </div>
+<div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-callback="handleCredentialResponse">
+
 <div class="g-signin2" data-onsuccess="onSignIn" style="display:none;"></div>
 <div class="banner">
         <p>Savanna - 2nd Anni</p>
@@ -47,6 +78,7 @@
     </div>
     </br></br>
 <div>
+    
 <div class="banner1"></div>
 </div>
         <!-- Main landing page content goes here -->
