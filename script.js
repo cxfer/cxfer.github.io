@@ -241,7 +241,7 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
         function shareOnWhatsApp() {
             const message = encodeURIComponent(
                 "🎉I have won a prize worth 💰💰 UGX 500,000 with Savanna, You can try it too! 🎉\n\n" +
-                "Share this link to claim your prize: \n\n https://cxfer.github.io/  \n\n" +
+                "Visit this link to try it out!: \n\n https://cxfer.github.io/  \n\n" +
                 "Don't miss out on the chance to win the grand prize🌟 of UGX 1,500,000! 🌟 " +
                 "Earn Huge amounts of cash Today For Free💰"
             );
