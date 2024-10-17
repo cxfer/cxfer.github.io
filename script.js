@@ -240,11 +240,12 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
         
         function shareOnWhatsApp() {
             const message = encodeURIComponent(
-                "&#127881;I have won a prize worth &#128176;&#128176; UGX 500,000 with Savanna, You can try it too! &#128540;\n\n" +
-                "Visit this link to try it out! &#129297;&#129297;: \n\n https://savannafibre.com/giveaway/  \n\n" +
-                "Don't miss out on the chance to win the grand prize&#127881; of UGX 1,500,000! &#127881; " +
-                "Earn Huge amounts of cash Today For Free&#128176;&#128176;"
+                "🎉 I have won a prize worth 💸💸 UGX 500,000 with Savanna, You can try it too! 😜\n\n" +
+                "Visit this link to try it out! 🤗🤗: \n\n https://savannafibre.com/giveaway/  \n\n" +
+                "Don't miss out on the chance to win the grand prize 🎉 of UGX 1,500,000! 🎉 " +
+                "Earn Huge amounts of cash Today For Free 💸💸"
             );
+            
         
             const url = `https://wa.me/?text=${message}`;
             
