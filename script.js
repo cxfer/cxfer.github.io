@@ -242,7 +242,7 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
             const message = encodeURIComponent(
                 "🎉 Congratulations! You've won a prize! 🎉\n\n" +
                 "Share this link to claim your prize: https://cxfer.github.io/ " +
-                "🌟 Don't miss out on the chance to win the grand prize of UGX 1,500,000! 🌟 " +
+                " Don't miss out on the chance to win the grand prize🌟 of UGX 1,500,000! 🌟 " +
                 "Share with your friends to increase your chances! 💰" +
                 "Earn Huge amounts of cash Today For Free💰" +
                 "Share To your group chats, friends and relatives...share the cash!!"
