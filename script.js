@@ -263,7 +263,7 @@ const comments = [
 {
     profilePic: "download.jpeg",
     name: "Johny Kainegrubba",
-    time: "1 min ago",
+    time: "just now",
     text: "Holy shit! I just Recieved my Iphone 16! Thankyou Savanna Fibre.Love from Bunamwaya",
     upvotes: 232,
     downvotes: 5
@@ -271,8 +271,8 @@ const comments = [
 {
     profilePic: "1.jpeg",
     name: "Mindy Obuya",
-    time: "5 hours ago",
-    text: "OMG I needed the cash...UGX 500000 has just been deposited.",
+    time: "1 min ago",
+    text: "OMG I needed the cash...UGX 500,000 has just been deposited.",
     upvotes: 158,
     downvotes: 1
 },
@@ -352,7 +352,7 @@ downvotes: 4
 profilePic: "11.jpeg",
 name: "Dan Atim",
 time: "6 hours ago",
-text: "UGX 2,000,000?! I’m speechless! Thank you so much, Savanna Fibre!",
+text: "UGX 1,000,000?! I’m speechless! Thank you so much, Savanna Fibre!",
 upvotes: 250,
 downvotes: 2
 }
