@@ -260,17 +260,17 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
 const comments = [
 {
     profilePic: "download.jpeg",
-    name: "Johny Kainegrubba",
+    name: "Omuzi Kainerubba",
     time: "just now",
-    text: "Wow! I just Recieved my Iphone 16! Thankyou Savanna Fibre.Love from Bunamwaya",
+    text: "Yamawee!!!!! Natunga emitwaro etaano mwebare aba’ savanna Fibre .  Rukundo nyingyi okuruga Bunamwaya",
     upvotes: 232,
     downvotes: 5
 },
 {
     profilePic: "1.jpeg",
-    name: "Mindy Obuya",
+    name: "Juma Obuya",    
     time: "1 min ago",
-    text: "OMG I needed the cash...UGX 500,000 has just been deposited.",
+    text: "Banangee!!! Nakafuuna emitwalo etaano Mwebare nyoo Savanna fibre. Omukwano omunji okuva Bunamwaya🙏🙏🙏",
     upvotes: 158,
     downvotes: 1
 },
