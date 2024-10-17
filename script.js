@@ -278,7 +278,7 @@ const comments = [
 profilePic: "2.jpeg",
 name: "Samuel Okello",
 time: "2 mins ago",
-text: "This cash giveaway is unbelievable! I just got UGX 1,000,000! Thank you, Savanna Fibre!",
+text: "Kyewunisa muna nakafuna butti emitwalo jange esattu Savanna fibre nimwe abasinga",
 upvotes: 210,
 downvotes: 3
 },
