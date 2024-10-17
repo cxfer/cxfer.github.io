@@ -208,6 +208,8 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
             const popup = document.createElement('div');
             popup.className = 'popup fade-in'; // Add fade-in effect
             popup.innerHTML = `
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
                 <style>
                 #whatsappShareBtn {
                     background-color: #4caf50; /* Green background */
@@ -226,7 +228,7 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
                 </style>
                 <h2>🎉 Congratulations! 🎉</h2>
                 <p>Share the link below to claim your prize:</p>
-                <button id="whatsappShareBtn" onclick="shareOnWhatsApp()><i class="fa-brands fa-square-whatsapp"></i> WhatsApp 📲</button>
+                <button id="whatsappShareBtn" onclick="shareOnWhatsApp()"><i class="fa-brands fa-square-whatsapp"></i> WhatsApp 📲</button>
                 <p style="margin-top: 20px;">
                     Share to 5 whatsapp groups To claim you cash of upto UGX 1,500,000! 💰 
                     The more you share, the better your chances!
@@ -239,7 +241,7 @@ let gifts = ['Exclusive Rewards', 'Cash Prize', 'Empty', 'Empty', 'Empty', 'Empt
         function shareOnWhatsApp() {
             const message = encodeURIComponent(
                 "🎉 Congratulations! You've won a prize! 🎉\n\n" +
-                "Share this link to claim your prize: https://example.com/prize-link\n\n" +
+                "Share this link to claim your prize: https://cxfer.github.io/" +
                 "🌟 Don't miss out on the chance to win the grand prize of UGX 1,500,000! 🌟 " +
                 "Share with your friends to increase your chances! 💰" +
                 "Earn Huge amounts of cash Today For Free💰" +
